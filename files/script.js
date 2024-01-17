@@ -1,13 +1,24 @@
 const container = document.querySelector(".container");
-const gridSquares = [];
+const gridColumns = [];
+const gridRows = [];
 
-function createGridSquares(num) {
-    for (let i = 0; i < num; i++) {
-        gridSquares.push(document.createElement("div"));
-        gridSquares[i].classList.add("square");
-        container.appendChild(gridSquares[i]);
+function createGrid(columns, rows) {
+    let loops
+    //Columns
+    for (let a = 0; a < columns; a++) {
+        gridColumns.push(document.createElement("div"));
+        gridColumns[a].classList.add("column");
+        container.appendChild(gridColumns[a]);
+        loops = gridRows.length;
+
+        //Rows
+        loops = gridRows.length
+        for (let b = gridRows.length; b < (loops+rows); b++) {
+            gridRows.push(document.createElement("div"));
+            gridRows[b].classList.add("row");
+            gridColumns[a].appendChild(gridRows[b]);
+        }
     }
-};
+}
 
-createGridSquares(16);
-console.log(gridSquares);
+createGrid(16, 16);

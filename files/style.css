@@ -2,10 +2,22 @@
     display: flex;
 }
 
-.square {
+.column {
     background-color: #b48cb8;
     border: 1px;
     border-color: #000;
     border-style: solid;
-    padding: 5px;
+    padding: 2em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    background-color: #8ca4b8;
+    border: 1px;
+    border-color: #000;
+    border-style: solid;
+    padding: 2em;
+    flex: 1;
 }
