@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.square {
+    background-color: #b48cb8;
+    border: 1px;
+    border-color: #000;
+    border-style: solid;
+    padding: 5px;
+}
