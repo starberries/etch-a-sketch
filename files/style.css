@@ -1,23 +1,19 @@
 .container {
     display: flex;
+    width: 500px;
 }
 
 .column {
-    background-color: #b48cb8;
-    border: 1px;
-    border-color: #000;
-    border-style: solid;
-    padding: 2em;
-    flex: 1;
+    flex: 0;
     display: flex;
     flex-direction: column;
 }
 
 .row {
     background-color: #8ca4b8;
-    border: 1px;
-    border-color: #000;
-    border-style: solid;
-    padding: 2em;
-    flex: 1;
+    padding: 4px;
+}
+
+.row:hover {
+    background-color: #c26cbb;
 }
