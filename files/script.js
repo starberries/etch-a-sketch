@@ -22,3 +22,11 @@ function createGrid(columns, rows) {
 }
 
 createGrid(16, 16);
+
+const color = document.querySelectorAll(".row");
+
+color.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+        item.classList.add("color");
+    });
+});
